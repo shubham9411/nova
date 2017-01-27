@@ -56,7 +56,7 @@
 		<div class="col-xs-3 flickr-gallery">
 			<h4>FLICKR GALLERY</h4>
 			<?php
-			$posts = get_posts(array('post_type' => 'attachment', 'posst_mime_type' => 'image/jpeg') );
+			$posts = get_posts(array('post_type' => 'attachment', 'posst_mime_type' => 'image/jpeg', 'posts_per_page' => 5) );
 			foreach ($posts as $key => $post) {
 				setup_postdata( $post );
 				?>
